@@ -25,3 +25,13 @@ class ScrollManager {
     }
   }
   document.addEventListener('DOMContentLoaded', () => new ScrollManager());
+
+
+
+
+
+  document.querySelectorAll('[data-lenis-prevent]').forEach((el) => {
+  el.addEventListener('wheel', (e) => {
+    e.stopPropagation(); // Prevent body scroll
+  }, { passive: false });
+});
