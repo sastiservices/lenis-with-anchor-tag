@@ -29,7 +29,7 @@ class ScrollManager {
 
 
 
-
+// add attribute  on  div  overflow: auto/scroll;
   document.querySelectorAll('[data-lenis-prevent]').forEach((el) => {
   el.addEventListener('wheel', (e) => {
     e.stopPropagation(); // Prevent body scroll
